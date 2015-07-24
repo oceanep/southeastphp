@@ -6,11 +6,41 @@
 		<meta charset="utf-8">
 		<meta content="authors" description="composer.json">
 		<!-- STYLESHEETS -->
+		<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/bower_components/skeleton/css/skeleton.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="styles/main.css">
 		<!-- SCRIPTS -->
 		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-		<script src="/scripts/main.js"></script>
+		<script src="scripts/main.js"></script>
+		{% endblock head %}
 	</head>
+	<body>
+		<nav class="nav">
+			<div class="navbar-inner">
+			</div>
+		</nav>
+		<main>
+	    	{% block content %}
+	    	{% endblock content %}
+	  	</main>
+	  	<footer class="footer">
+	  		<div class="upperFooter">
+	  		</div>
+	  		<div class="lowerFooter">
+	  			<p>Copyright <?php echo date('y');?>
+	  		</div>
+	  	</footer>
+
+
+
+
+
+
+
+
+
+
+	</body>
 </html>

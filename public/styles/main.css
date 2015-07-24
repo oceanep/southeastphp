@@ -1,0 +1,42 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cardo', serif;
+}
+
+p {
+	font-size: 2.2rem;
+}
+
+p, span, li, a {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* NAV */
+nav.nav {
+	height: 50px;
+	background-color: #7e57c2;
+}
+
+/* FOOTER */
+footer {
+	position: absolute;
+	bottom: 0;
+	margin-top: 1000px;
+	width: 100%;
+}
+.upperfooter {
+	background-color: #b39ddb;
+	height: 60px;
+	width: 100%;
+}
+
+.lowerfooter {
+	height: 30px;
+	background-color: #7e57c2;
+	width: 100%;
+}

@@ -9,15 +9,17 @@ $log->pushHandler(new Monolog\Handler\StreamHandler('app.txt', Monolog\Logger::W
 $log->addWarning('Oh Noes.');
 
 
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(array(
+	'view' => new \Slim\Views\Twig()
+));
 
 $view = $app->view();
 $view->parserOptions = array(
-	'debug' => true;
+	'debug' => true
 );
 
-$view->parserExtension = array(
-	new \Slim\Views\TwigExtension();
+$view->parserExtensions = array(
+	new \Slim\Views\TwigExtension()
 );
 
 $app->get('/', function() use($app) {
