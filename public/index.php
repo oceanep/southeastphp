@@ -21,7 +21,7 @@ $view->parserExtension = array(
 );
 
 $app->get('/', function() use($app) {
-	
-});
+	$app->render('about.twig');
+})->name('about');
 
 $app->run();
